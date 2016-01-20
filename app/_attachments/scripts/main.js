@@ -74,12 +74,12 @@ function editDoc(id, rev, status, description, priority, begindate, enddate){
 	html += '<h3>Editeer todo record</h3><table class="table table-hover">';
 	html += '<input type="hidden" id="_id" value="' + id + '"/>';
 	html += '<input type="hidden" id="_rev" value="' + rev + '"/>';
-	html += '<tr><td>status :</td><td><input id="status2" type="text" size="50" value="' + status + '"/></td></tr>';
-	html += '<tr><td>priority:</td><td><input id="priority2" type="text" size="50" value="' + priority + '"/></td></tr>';
-	html += '<tr><td>description:</td><td><input id="description2" type="text" size="10" value="' + description + '"/></td></tr>';
-	html += '<tr><td>begindate:</td><td><input id="begindate2" type="text" size="10" value="' + begindate + '"/></td></tr>';
-	html += '<tr><td>enddate:</td><td><input id="enddate2" type="text" size="10" value="' + enddate + '"/></td></tr>';
-	html += '<tr><td colspan="2" align="center"><button type="button" class="btn btn-primary" onClick="updateDoc()">Ok</button></td></tr>';
+	html += '<tr><td>Status :</td><td><input id="status2" type="text" size="50" value="' + status + '"/></td></tr>';
+	html += '<tr><td>Priority:</td><td><input id="priority2" type="text" size="50" value="' + priority + '"/></td></tr>';
+	html += '<tr><td>Description:</td><td><input id="description2" type="text" size="10" value="' + description + '"/></td></tr>';
+	html += '<tr><td>Begindate:</td><td><input id="begindate2" type="text" size="10" value="' + begindate + '"/></td></tr>';
+	html += '<tr><td>Enddate:</td><td><input id="enddate2" type="text" size="10" value="' + enddate + '"/></td></tr>';
+	html += '<tr><td colspan="2" align="center"><button type="button" class="btn btn-primary" onClick="updateDoc()">OK</button></td></tr>';
 	html += '</table>';
 	
 	$('#edit').html(html);
